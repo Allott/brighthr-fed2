@@ -13,3 +13,4 @@ templates path
 global.css
 test
 
+https://threejs.org/docs/#manual/en/introduction/Installation

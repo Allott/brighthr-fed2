@@ -28,4 +28,7 @@ in .eslintrc
   "extends": ["next/babel","next/core-web-vitals"]
 }
 
-https://threejs.org/docs/#manual/en/introduction/Installation
+Step 3 - three
+https://www.npmjs.com/package/@react-three/fiber
+npm install three @react-three/fiber
+

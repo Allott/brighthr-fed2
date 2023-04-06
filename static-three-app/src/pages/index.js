@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Canvas from '@/components/three/BackgroundCanvas'
+import Home from '@/components/pages/Home'
 
-export default function Home() {
+export default function Index() {
   return (
     <>
       <Head>
@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-       <Canvas />
+       <Home />
       </main>
     </>
   )

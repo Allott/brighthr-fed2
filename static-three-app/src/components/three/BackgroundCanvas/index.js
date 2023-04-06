@@ -3,7 +3,7 @@ import Box from '../Box'
 
 const BackgroundCanvas = () => {
     return (
-        <div className="fixed top-0 left-0 w-full h-full">
+        <div className="fixed top-0 left-0 z-0 w-full h-full">
             <Canvas 
                 shadows
                 camera={{

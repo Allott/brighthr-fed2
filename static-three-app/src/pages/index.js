@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Canvas from '@/components/Canvas'
+import Canvas from '@/components/three/BackgroundCanvas'
 
 export default function Home() {
   return (

@@ -29,6 +29,8 @@ in .eslintrc
 }
 
 Step 3 - three
-https://www.npmjs.com/package/@react-three/fiber
+https://github.com/pmndrs/react-three-fiber
 npm install three @react-three/fiber
 
+https://github.com/pmndrs/drei#cubecamera
+npm install @react-three/drei

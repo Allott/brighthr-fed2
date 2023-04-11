@@ -21,7 +21,7 @@ const BackgroundCanvas = ({scrollY}) => {
                     rotation={[0,modScroll,0]}
                 />
                 <ambientLight intensity={0.5} />
-                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+                <spotLight position={[20, 20, 20]} angle={0.15} penumbra={1} />
                 <Box position={[0, 0, 0]} scale={5} />
                 <Box position={[0, 0, -5]} scale={2} />
             </Canvas>

@@ -1,7 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { PerspectiveCamera } from "@react-three/drei";
 import Box from '../Box'
-import Dinosaur from "../Dinosaur";
 
 const radius = 15;
 const scrollRate = 0.005

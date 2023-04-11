@@ -9,7 +9,6 @@ const Box = (props) => {
       <mesh
         {...props}
         // ref={ref}
-        scale={5}
       >
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial color={'orange'} />

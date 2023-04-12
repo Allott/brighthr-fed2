@@ -34,25 +34,13 @@ Docs: https://nextjs.org/docs
 - todo
 
 ---
-## Step 2 - install tailwind
+## Step 2 - ~~Install tailwind~~
 
-because im lost without it
+nvm comes out of the box now
 
 Docs: https://tailwindcss.com/docs/guides/nextjs
-
 `npm install -D tailwindcss postcss autoprefixer`
-
 `npx tailwindcss init -p`
-
----
-
-- Configure your template paths
-
-- Add Tailwind to global.css
-
-- test it!
-
-literally just copy paste from the docs
 
 ---
 
@@ -97,7 +85,7 @@ const BackgroundCanvas = () => {
             >
                 <PerspectiveCamera 
                     makeDefault 
-                    position={[10, 0, 0]}
+                    position={[0, 0, 10]}
                 />
                 <ambientLight intensity={0.5} />
                 <spotLight position={[20, 20, 20]} angle={0.15} penumbra={1} />

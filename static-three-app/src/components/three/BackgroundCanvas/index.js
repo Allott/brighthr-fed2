@@ -3,7 +3,7 @@ import { PerspectiveCamera } from "@react-three/drei";
 import Box from '../Box'
 
 const radius = 15;
-const scrollRate = 0.005
+const scrollRate = 0.005;
 const getX = (i) => Math.cos(i) * radius;
 const getY = (i) => Math.sin(i) * radius;
 

@@ -3,11 +3,9 @@ import BackgroundCanvas from "@/components/three/BackgroundCanvas";
 import Textbox from "@/components/Textbox";
 import loremIpsum from '../../../utils/loremIpsum'
 
-const Home = () => {
-    
+const Home = () => {    
     const [scrollY, setScrollY] = useState(0);
     const onScroll = useCallback(event => {
-        const { scrollY } = window;
         setScrollY(window.pageYOffset);
     }, []);
   

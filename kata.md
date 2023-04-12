@@ -1,4 +1,4 @@
-## Potential warmup katats
+## Potential warmup katas
 ### You will need an account!
 
 [1. Sum even numbers](https://www.codewars.com/kata/586beb5ba44cfc44ed0006c3)

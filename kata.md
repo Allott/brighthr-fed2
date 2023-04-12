@@ -7,5 +7,5 @@
 
 [3. Move Zeros to the end](https://www.codewars.com/kata/52597aa56021e91c93000cb0)
 
-- First solve the problem normally
-- Then try to make a solution with the worst possible practises
+- First solve the problem normally with good practice
+- Then try to make a solution with the worst possible practice

@@ -27,6 +27,21 @@ const Home = () => {
                 <Textbox text={loremIpsum[2]}/>
                 <Textbox text={loremIpsum[3]}/>
                 <Textbox text={loremIpsum[4]}/>
+                <Textbox text={loremIpsum[0]}/>
+                <Textbox text={loremIpsum[1]}/>
+                <Textbox text={loremIpsum[2]}/>
+                <Textbox text={loremIpsum[3]}/>
+                <Textbox text={loremIpsum[4]}/>
+                <Textbox text={loremIpsum[0]}/>
+                <Textbox text={loremIpsum[1]}/>
+                <Textbox text={loremIpsum[2]}/>
+                <Textbox text={loremIpsum[3]}/>
+                <Textbox text={loremIpsum[4]}/>
+                <Textbox text={loremIpsum[0]}/>
+                <Textbox text={loremIpsum[1]}/>
+                <Textbox text={loremIpsum[2]}/>
+                <Textbox text={loremIpsum[3]}/>
+                <Textbox text={loremIpsum[4]}/>
             </div>
         </>
     )

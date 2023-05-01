@@ -1,12 +1,9 @@
 import { Canvas } from "@react-three/fiber";
-
-import { PerspectiveCamera } from "@react-three/drei";
+import { PerspectiveCamera, Plane } from "@react-three/drei";
 import Box from '../Box'
+import rotationConst from '../../../constants/rotationConst'
 
-const radiusMin = 10;
-const extension = 5;
-const scrollRate = 0.005;
-const angleDown = -0.3;
+const { radiusMin, extension, scrollRate } = rotationConst;
 
 const BackgroundCanvas = ({scrollY}) => {
 
@@ -38,7 +35,14 @@ const BackgroundCanvas = ({scrollY}) => {
                 <ambientLight intensity={0.5} />
                 <spotLight position={[20, 20, 20]} angle={0.15} penumbra={1} />
                 <Box position={[0, 0, 0]} scale={5} />
-                <Box position={[0, 0, -5]} scale={2} />
+                <Plane 
+                    position={[0, -1.5, 0]} 
+                    scale={1000} 
+                    rotation={[-Math.PI/2,0,0]} 
+                    material-color="#00d1bc" 
+                    material-transparent 
+                    material-opacity={0.9}
+                />
             </Canvas>
         </div>
    

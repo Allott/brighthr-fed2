@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <>
             <BackgroundCanvas scrollY={scroll} />
-            <ScrollBox count={8}>
+            <ScrollBox count={7}>
                 <FaceBox position={0}><Landing contactPage={2} /></FaceBox>
                 <FaceBox position={1}>test</FaceBox>
                 <FaceBox position={2}>2</FaceBox>

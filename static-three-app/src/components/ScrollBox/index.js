@@ -6,7 +6,7 @@ const { scrollRate } = rotationConst;
 const halfPi = Math.PI/2;
 
 const ScrollBox = ({count, children}) => {
-    const {height} = useWindow();
+    const { height } = useWindow();
     const gap = Math.round(halfPi / scrollRate);
     const h = ((count) * gap) + (height*0.8);
     return (

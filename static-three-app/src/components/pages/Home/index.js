@@ -1,7 +1,7 @@
 import React from 'react';
 import useScroll from '@/utils/useScroll/useScroll' 
 import BackgroundCanvas from "@/components/three/BackgroundCanvas";
-import Textbox from "@/components/Textbox";
+import { ScrollBox, SideBox } from "@/components/ScrollBox";
 import loremIpsum from '../../../utils/loremIpsum'
 
 const Home = () => {    
@@ -10,29 +10,16 @@ const Home = () => {
     return (
         <>
             <BackgroundCanvas scrollY={scroll} />
-            <div className="relative z-10 flex flex-col items-center">
-                <Textbox text={'This is a sample site to show next.js and three.js'}/>
-                <Textbox text={loremIpsum[0]}/>
-                <Textbox text={loremIpsum[1]}/>
-                <Textbox text={loremIpsum[2]}/>
-                <Textbox text={loremIpsum[3]}/>
-                <Textbox text={loremIpsum[4]}/>
-                <Textbox text={loremIpsum[0]}/>
-                <Textbox text={loremIpsum[1]}/>
-                <Textbox text={loremIpsum[2]}/>
-                <Textbox text={loremIpsum[3]}/>
-                <Textbox text={loremIpsum[4]}/>
-                <Textbox text={loremIpsum[0]}/>
-                <Textbox text={loremIpsum[1]}/>
-                <Textbox text={loremIpsum[2]}/>
-                <Textbox text={loremIpsum[3]}/>
-                <Textbox text={loremIpsum[4]}/>
-                <Textbox text={loremIpsum[0]}/>
-                <Textbox text={loremIpsum[1]}/>
-                <Textbox text={loremIpsum[2]}/>
-                <Textbox text={loremIpsum[3]}/>
-                <Textbox text={loremIpsum[4]}/>
-            </div>
+            <ScrollBox count={8}>
+                <SideBox position={0}>test</SideBox>
+                <SideBox position={1}>test</SideBox>
+                <SideBox position={2}>test</SideBox>
+                <SideBox position={3}>test</SideBox>
+                <SideBox position={4}>test</SideBox>
+                <SideBox position={5}>test</SideBox>
+                <SideBox position={6}>test</SideBox>
+                <SideBox position={7}>test</SideBox>
+            </ScrollBox>
         </>
     )
 }

@@ -1,26 +1,28 @@
 import rotationConst from '../../constants/rotationConst'
-import useScroll from '@/utils/useScroll/useScroll' 
+import useScroll from '@/utils/useScroll' 
+import useWindow from '@/utils/useWindow';
 
 const { scrollRate } = rotationConst;
 const halfPi = Math.PI/2;
 
 const ScrollBox = ({count, children}) => {
+    const {height} = useWindow();
     const gap = Math.round(halfPi / scrollRate);
-    const height = (count+1) * gap + 80;
+    const h = ((count) * gap) + (height*0.8);
     return (
         <div 
             className="relative z-10 flex flex-col items-center" 
-            style={{height: `${height}px`, 'margin-top': `${gap}px`}}
+            style={{height: `${h}px`, 'margin-top': `${height/5}px`, }}
             >
             {children}
         </div>
     );
 }
 
-const SideBox = ({position, children}) => {
+const FaceBox = ({position, children}) => {
     const scroll = useScroll();
     const top = Math.round(position * (halfPi / scrollRate));
-    const opacity = Math.max(100 - Math.abs(scroll - top),0)
+    const opacity = Math.max(100 - 2*Math.abs(scroll - top),0)
     return (
         <div 
             className={`absolute max-w-4xl`} 
@@ -31,4 +33,4 @@ const SideBox = ({position, children}) => {
     );
 }
 
-export {ScrollBox, SideBox}
+export {ScrollBox, FaceBox}

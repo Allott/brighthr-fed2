@@ -26,7 +26,7 @@ const useScroll = () => {
         }
         timer = setTimeout(function() {
               scrollTo(window.pageYOffset)
-        }, 150);
+        }, 100);
     }, []);
   
     useEffect(() => {

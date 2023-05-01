@@ -1,33 +1,36 @@
 import { Canvas } from "@react-three/fiber";
+
 import { PerspectiveCamera } from "@react-three/drei";
 import Box from '../Box'
 
 const radiusMin = 10;
 const extension = 5;
 const scrollRate = 0.005;
+const angleDown = -0.3;
 
 const BackgroundCanvas = ({scrollY}) => {
+
     const modScroll = scrollY * scrollRate;
 
-    // modify radius to zoom in on each side of cube
+    // Zoom in
     const halfScroll = modScroll * 2;
-    const extentionFactor = Math.abs(Math.sin(halfScroll) * extension)
+    const halfSin = Math.abs(Math.sin(halfScroll))
+    const extentionFactor = halfSin * extension
     const radius = radiusMin + extentionFactor
 
-    // rotation Position
-    const xRotation = Math.cos(modScroll) * radius;
-    const yRotation = Math.sin(modScroll) * radius;
+    // Rotation Position
+    const xMod = Math.cos(modScroll);
+    const yMod = Math.sin(modScroll);
 
+    const xRotation = xMod * radius;
+    const yRotation = yMod * radius;
 
-
-
-    console.log(modScroll)
     return (
         <div className="fixed top-0 left-0 z-0 w-full h-full">
             <Canvas 
                 shadows
             >
-                <PerspectiveCamera 
+                <PerspectiveCamera
                     makeDefault 
                     position={[yRotation, 0, xRotation]} 
                     rotation={[0,modScroll,0]}

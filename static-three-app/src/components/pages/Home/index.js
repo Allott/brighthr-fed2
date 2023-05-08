@@ -3,6 +3,7 @@ import useScroll from '@/utils/useScroll'
 import BackgroundCanvas from "@/components/three/BackgroundCanvas";
 import { ScrollBox, FaceBox } from "@/components/ScrollBox";
 import Landing from '../faces/Landing';
+import Buzz from '../faces/Buzz';
 
 const Home = () => {    
     const scroll = useScroll();
@@ -12,7 +13,7 @@ const Home = () => {
             <BackgroundCanvas scrollY={scroll} />
             <ScrollBox count={7}>
                 <FaceBox position={0}><Landing contactPage={2} /></FaceBox>
-                <FaceBox position={1}>test</FaceBox>
+                <FaceBox position={1}><Buzz /></FaceBox>
                 <FaceBox position={2}>2</FaceBox>
                 <FaceBox position={3}>test</FaceBox>
                 <FaceBox position={4}>test</FaceBox>

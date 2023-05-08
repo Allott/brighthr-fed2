@@ -5,7 +5,7 @@ import rotationConst from '../../../constants/rotationConst'
 
 const { radiusMin, extension, scrollRate } = rotationConst;
 
-const BackgroundCanvas = ({scrollY}) => {
+const BackgroundCanvas = ({scrollY, setIsLoading}) => {
 
     const modScroll = scrollY * scrollRate;
 
@@ -21,6 +21,9 @@ const BackgroundCanvas = ({scrollY}) => {
 
     const xRotation = xMod * radius;
     const yRotation = yMod * radius;
+
+    // total loading hack here, todo this better
+    setTimeout(()=>setIsLoading(false), 500)
 
     return (
         <div className="fixed top-0 left-0 z-0 w-full h-full">

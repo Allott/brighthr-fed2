@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import useScroll from '@/utils/useScroll' 
 import BackgroundCanvas from "@/components/three/BackgroundCanvas";
 import { ScrollBox, FaceBox } from "@/components/ScrollBox";
@@ -12,11 +12,12 @@ import ContactMe from '../faces/ContactMe';
 
 const Home = () => {    
     const scroll = useScroll();
+    const [isLoading, setIsLoading] = useState(true);
     
     return (
         <>
-            <BackgroundCanvas scrollY={scroll} />
-            <ScrollBox count={5}>
+            <BackgroundCanvas scrollY={scroll} setIsLoading={setIsLoading}/>
+            <ScrollBox count={5} isLoading={isLoading}>
                 <FaceBox position={0}><Landing contactPage={4} /></FaceBox>
                 <FaceBox position={1}><Buzz /></FaceBox>
                 <FaceBox position={2}><Education /></FaceBox>

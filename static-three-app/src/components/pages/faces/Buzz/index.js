@@ -15,10 +15,11 @@ const Buzz = ({contactPage}) => {
             const right = `${x}px`;
             const top = `${y}px`;
             return <div
+                        key={item}
                         style={{right: right, top: top}}
                         className='absolute'
                     >
-                    <H2 key={item}>
+                    <H2>
                         {item}
                     </H2>
                 </div>

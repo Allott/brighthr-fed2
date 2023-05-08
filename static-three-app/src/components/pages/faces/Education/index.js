@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Hull from '/public/pictures/Hull.jpeg'
 import Nottingham from '/public/pictures/Nottingham.jpeg'
 import { H1, H2 } from '../../../Text'
-import goToPage from '@/utils/goToPage'
 
 const Education = () => (
     <div className='flex flex-col items-center'>

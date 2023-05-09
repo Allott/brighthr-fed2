@@ -12,9 +12,9 @@ const BackgroundCanvas = ({scrollY, setIsLoading}) => {
 
     // Zoom in
     const halfScroll = modScroll * 2;
-    const halfSin = Math.abs(Math.sin(halfScroll))
-    const extentionFactor = halfSin * extension
-    const radius = radiusMin + extentionFactor
+    const halfSin = Math.abs(Math.sin(halfScroll));
+    const extentionFactor = halfSin * extension;
+    const radius = radiusMin + extentionFactor;
 
     // Rotation Position
     const xMod = Math.cos(modScroll);
